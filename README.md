@@ -49,17 +49,21 @@ You can check if this is successful by going to `http://localhost/pa1/perl/hello
 In your browser. You should see `Hello, World.`.  
 
 
-*OSX Instructions*
-- Create a new directory for Apache in your root folder
+#OSX Instructions
+- Create a new directory for Apache in your root folder.  
+    
   ```
   $ sudo mkdir /Apache/
   ```
-- Go into into /Apache/ and clone the repository
-- Change the permissions on the Apache directory recursively
+- Go into into /Apache/ and clone the repository. 
+  
+- Change the permissions on the Apache directory recursively.
+  
   ```
   $ sudo chmod -R 775 /Apache/
   ```
-- Search for DocumentRoot (on line 236 on my file) in /etc/apache2/httpd.conf and change the paths to /Apache/
+- Search for DocumentRoot (on line 236 on my file) in /etc/apache2/httpd.conf and change the paths to /Apache/.    
+  
   ```
   DocumentRoot "/Apache/"
   <Directory "/Apache/">
